@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="OFBiz Main Build-IDE" basedir="..">
+    <import file="../build.xml"/>
+    <!-- TODO: edit the following target according to your needs -->
+    <!-- (more info: http://www.netbeans.org/kb/41/freeform-config.html#debugj2se) -->
+    <target name="debug-nb">
+        <nbjpdastart name="OFBiz Main Build" addressproperty="jpda.address" transport="dt_socket"/>
+        <java jar="ofbiz.jar" fork="true">
+            <jvmarg value="-Xms256M"/>
+            <jvmarg value="-Xmx512M"/>
+            <jvmarg value="-Xdebug"/>
+            <jvmarg value="-Xnoagent"/>
+            <jvmarg value="-Djava.compiler=none"/>
+            <jvmarg value="-Xrunjdwp:transport=dt_socket,address=${jpda.address}"/>
+        </java>
+    </target>
+</project>

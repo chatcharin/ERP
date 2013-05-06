@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//applications/order/webapp/ordermgr/reports/SalesByStoreReport.fo.ftl=UTF-8
+encoding//applications/product/webapp/facility/WEB-INF/actions/facility/PrintFacilityTransfers.groovy=UTF-8
+encoding//applications/product/webapp/facility/facility/PrintBarCode.fo.ftl=UTF-8
+encoding//applications/product/webapp/facility/shipment/PrintBarCode.fo.ftl=UTF-8
